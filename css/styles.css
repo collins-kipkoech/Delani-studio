@@ -1,0 +1,24 @@
+.landing{
+    background-image: url('../images/background1.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding-top:17%; 
+    font-family: 'Gabriela', serif;
+    /* padding-bottom:5%; */
+  }
+  .landing h1{
+    padding: 2px;
+    margin: 5px;
+  }
+  .landing p{
+    padding: 2px;
+  }
+  #logo{
+    margin-top: 12px;
+    margin-bottom: 24px;
+    width: 70px;
+    height: 70px;;
+  }
