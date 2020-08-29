@@ -115,21 +115,21 @@
   </div> 
  <div class="container form-format">
   
-  <form id="contact_form" action="#" method="POST" enctype="multipart/form-data" name="myForm">
+  <form id="contact_form" action="#" method="POST" name="myForm" onsubmit="return validate()" name="myForm">
     <div class="row">
       
-      <input id="name-input" class="input" name="name-input" type="text" value="" size="30" placeholder="name" required>
+      <input id="name-input" class="input" name="name-input" type="text" value="" size="30" placeholder="name">
       
-      <input id="email-input" class="input" name="email-input" type="text" value="" size="30" placeholder="email" autocapitalize="off" required>
+      <input id="email-input" class="input" name="email-input" type="text" value="" size="30" placeholder="email" autocapitalize="off">
     </div>
     
     <div class="row">
-      <label class="required" for="message">Your message:</label><br />
-      <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+      <label class="required" for="message-input">Your message:</label><br />
+      <textarea id="message-input" class="input" name="message-input" rows="7" cols="30"></textarea><br />
     
     </div>
       
-      <input id="submit_button" type="submit" value="submit" >
+      <input id="submit_button" type="submit" value="submit" name="submit" >
   </form>
  </div>
   <footer>
@@ -149,5 +149,6 @@
   <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"e71bed4d6ae5a7c984dfe28b0","lid":"dbf7e27685","uniqueMethods":true}) })</script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/formvalidation.js"></script>
 </body>
 </html>
