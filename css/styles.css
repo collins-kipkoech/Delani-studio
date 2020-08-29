@@ -1,24 +1,275 @@
+@import url('https://fonts.googleapis.com/css?family=Copse|Delius+Swash+Caps|Gabriela|Unkempt&display=swap');
+html{
+  scroll-behavior: smooth;
+}
 .landing{
-    background-image: url('../images/background1.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    text-align: center;
-    padding-top:17%; 
-    font-family: 'Gabriela', serif;
-    /* padding-bottom:5%; */
+  background-image: url('../images/background1.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+  padding-top:20%; 
+  
+  
+}
+.landing h1{
+  padding: 4px;
+  margin: 4px;
+}
+.landing p{
+  padding: 4px;
+}
+#logo{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  height: 80px;
+  width: 80px;
+  
+}
+#mouse-click{
+    margin-top: 15%;
+    padding-top : 20px;
+  
+    padding-bottom: 30px; 
+  
+}
+#mouse-click {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
   }
-  .landing h1{
-    padding: 2px;
-    margin: 5px;
+  40% {
+    transform: translateY(-55px);
   }
-  .landing p{
-    padding: 2px;
+  60% {
+    transform: translateY(-45px);
   }
-  #logo{
-    margin-top: 12px;
-    margin-bottom: 24px;
-    width: 70px;
-    height: 70px;;
+}
+
+.about{
+  text-align: center;
+  padding-top:30px;
+  padding-bottom: 30px;
+  
+  font-family: sans-serif;
+}
+#about{
+  font-family: sans-serif;
+}
+.services{
+  text-align: center;
+  background-image: url("../images/background2.jpg");
+  color: white;
+  background-position: center;
+  font-family: sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  font-size: 15px;
+}
+.services h2{
+  font-family: sans-serif;
+  
+}
+#services-one{
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.what-we-do{
+  font-family: 'Quattrocento', serif;
+  text-align: center;
+  padding-top: 40px;
+  font-family: sans-serif;
+}
+.what-we-do .headings{
+  padding-bottom: 38px;
+}
+#portfolio{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left:18%;
+  margin-right: 16%; 
+}
+.col-md-3 img{
+  max-width: 100%;
+  max-height: 100%;
+}
+.portfolio h2{
+  text-align: center;
+  padding-top:40px;
+  font-family: 'Gabriela', serif;
+}
+.contact{
+  background-image: url('../images/background2.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  
+}
+.hd-one{
+  padding: 4px;
+}
+
+footer{
+  text-align: center;
+  padding-top: 30px;
+  font-family: 'Delius Swash Caps', cursive;
+}
+footer p{
+  margin-top: 10px;
+}
+#product, #development, #design{
+  display: none;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+#product .title, #development .title, #design .title{
+  font-size: 20px;
+  font-weight: 600;
+}
+#overlay,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
+  display: none;
+  color: black;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(255, 255, 255, 0.456);
+  position:absolute;
+  top: 20px;
+  left: 35px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 50%;
+  font-family: sans-serif;
+}
+@media only screen and (max-width: 755px){
+  #overlay,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
+    width: 100%;
+    height: 100%;
+    top: 20px;
+    left: 16px;
+    padding-top: 20%;
+    
   }
+  .col-md-3 img{
+    width:100%px;
+    margin: 20px;
+  }
+  #portfolio{
+    margin-left:8%;
+    margin-right: 16%; 
+  }
+  button{
+    margin-left: 2%;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    
+
+    
+  }
+}
+@media only screen and (max-width: 425px){
+  #overlay,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
+    width: 100%;
+    height: 100%;
+    top: 20px;
+    left: 16px;
+    padding-top: 20%;
+    font-size: 20px;
+  }
+  .col-md-3 img{
+    width:100%px;
+    margin: 20px;
+  }
+  #portfolio{
+    margin-left:8%;
+    margin-right: 16%; 
+  }
+  button{
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+  }
+  #MERGE0{
+    width: 84%;
+    margin-left: 4%;
+    padding-bottom: 10px;
+  }
+  #MERGE1{
+    width: 100%;
+    margin-left: 4%;
+    margin-bottom: 20px;
+  }
+  #comment{
+    margin-left: 4%;
+    width: 84%;
+  }
+}
+@media only screen and (min-width: 825px){
+  #overlay,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
+    width: 100%;
+    height: 100%;
+    top: 20px;
+    left: 20px;
+    padding-top:30%; 
+  }
+  .col-md-3 img{
+    width: 400px;
+    margin: 20px;
+  }
+  #portfolio{
+    margin-left:10%;
+    margin-right: 10%; 
+  }
+}
+@media only screen and (min-width: 625px){
+  #overlay,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
+    width: 100%;
+    height: 100%;
+    top: 20px;
+    left: 20px;
+    padding-top:20%; 
+    font-size: 26px;
+  }
+  .col-md-3 img{
+    width: 400px;
+    margin: 20px;
+  }
+  #portfolio{
+    margin-left:6%;
+    margin-right: 10%; 
+  }
+}
+label {
+  font-weight: bold;
+  font-size: 16px;
+}
+.myForm{
+  background-image: url("../images/background3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+#submit_button {
+  background-color: #B22222;
+  height: 30px;
+  width: 20%;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+input, textarea {
+  background-color: #D3D3D3;
+  color: #2F4F4F;
+  width: 250px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 2px 2px #696969;
+}
