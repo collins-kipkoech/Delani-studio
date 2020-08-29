@@ -260,10 +260,17 @@ label {
   font-weight: bold;
 }
 
-input, textarea {
-  background-color: #D3D3D3;
+input{
+  background-color: #8b8888;
   color: #2F4F4F;
   width: 250px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 2px 2px #bebcbc;
+}
+textarea {
+  background-color: #D3D3D3;
+  color: #2F4F4F;
+  width: 500px;
   margin-bottom: 10px;
   box-shadow: 5px 5px 2px 2px #696969;
 }
