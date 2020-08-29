@@ -84,7 +84,7 @@ $(document).ready(function(){
   });
   
   $(document).ready(function(){
-    $("form#form34A").submit(function(event){
+    $("myForm").submit(function(event){
       
       var name = $("input#MERGE1").val();
       var email = $("input#MERGE0").val();
