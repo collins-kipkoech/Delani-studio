@@ -37,3 +37,22 @@ $(document).ready(function(){
   });
 
 });
+
+$(document).ready(function(){
+  $("#porfolio1").mouseenter(function(){
+    $("#m-hover1").show();
+
+  });
+  $("#portfolio1").mouseleave(function(){
+    $("#m-hover").hide();
+  });
+});
+$(document).ready(function(){
+  $("#porfolio2").mouseenter(function(){
+    $("#m-hover2").show();
+
+  });
+  $("#portfolio1").mouseleave(function(){
+    $("#m-hover2").hide();
+  });
+});
