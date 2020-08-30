@@ -1,32 +1,39 @@
 $(document).ready(function(){
-  $("#development-image").click(function(){
-    $("#development-image").slideDown('1500').hide('1000');
-    $("#development").show('1500');
-  });
-  $("#development").click(function(){
-    $("#development").slideUp('1500');
-    $("#development-image").slideDown('1500');
-  });
-});
-
-$(document).ready(function(){
+  $("#design-content").hide();
   $("#design-image").click(function(){
-    $("#design-image").slideDown('1500').hide('1000');
-    $("#design").show('1500');
+    $(this).slideDown('1500').hide('1000');
+    $("#design-content").show();
   });
-  $("#design").click(function(){
-    $("#design").slideUp('1500');
+  $("#design-content").click(function(){
+    $(this).slideUp('1500');
     $("#design-image").slideDown('1500');
   });
 });
 
 $(document).ready(function(){
+  $("#development-content").hide();
+  $("#development-image").click(function(){
+    $(this).slideDown("1500").hide("1000");
+    $("#development-content").show();
+
+  });
+  $("#development-content").click(function(){
+    $(this).slideUp("1500");
+    $("#development-image").slideDown("1500");
+  });
+
+});
+
+$(document).ready(function(){
+  $("#product-content").hide();
   $("#product-image").click(function(){
-    $("#product-image").slideDown('1500').hide('1000');
-    $("#product").show('1500');
+    $(this).slideDown("1500").hide("1000");
+    $("#product-content").show();
+
   });
-  $("#product").click(function(){
-    $("#product").slideUp('1500');
-    $("#product-image").slideDown('1500');
+  $("#product-content").click(function(){
+    $(this).slideUp("1500");
+    $("#product-image").slideDown("1500");
   });
+
 });
